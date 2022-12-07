@@ -8,7 +8,7 @@ async function bootstrap() {
   app.use(helmet());
   const config = new DocumentBuilder()
     .setTitle('Pokemon API')
-    .setDescription('Here you can find all the pokemons and their information')
+    .setDescription('Aqui puedes encontrar toda la información de los pokemones')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
