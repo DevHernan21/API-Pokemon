@@ -10,8 +10,7 @@ import { fetchData } from '../../utils/pokemon.utils';
 export class PokemonService {
 
   private getPokemonGeneric(): Promise<IPokemonRawResponse> {
-    const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/`;
-    //?offset=${offset}&limit=${limit}
+    const pokemonUrl = `https://pokeapi.co/api/v2/pokemon`;
     return fetchData(pokemonUrl)
   }
 
